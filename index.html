@@ -280,7 +280,7 @@
  
  <footer id="footer" class="footer-section " >
     <div class="container footer-container">
-        <div>
+    <div>
     <a href="" class="logo logo-footer link"> <span class="logo-text-web">Web</span>Studio</a>
     <address>
         <ul class="list adress-bottom">
@@ -323,17 +323,75 @@
     </li>
 </ul>
 </div>
+<div class="subscribe">
+    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+    <form class="subscribe-form">
+        <input type="email" placeholder="E-mail" name="subscribe-email" class="subscribe-input">
+        <button type="button" class="subscribe-btn"> 
+            <svg class="btn-icon">
+            <use xlink:href="./images/spriteopt.svg#icon-iconsend">
+            </use>
+        </svg>Подписаться</button>
+    </form>
+
+</div>
 </div>
  </footer>
  <div class="backdrop is-hidden" data-modal>
      <div class="modal">
          <button class="close-modal-btn" data-modal-close>
-<!-- <svg class="close-icon">
-    <use href="./images/close.svg"></use>
-</svg> -->
-</button>
-<p>Модальное окно в графическом интерфейсе пользователя — окно, которое блокирует работу пользователя с родительским
-приложением до тех пор, пока пользователь это окно не закроет.</p>
+            <svg class="close-icon">
+                <use xlink:href="./images/spriteopt.svg#icon-close-black">
+                </use>
+            </svg> </button>
+<h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+<form autocomplete="off">
+    <div role="group" class="modal-form">
+        <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+        <input type="text" id="name" name="user-name" autofocus class="form-input">
+        <svg class="input-icon">
+            <use xlink:href="./images/spriteopt.svg#icon-person-black">
+            </use>
+        </svg>
+    </div>
+        <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+        <input type="text" id="tel" name="user-phone" class="form-input">
+        <svg class="input-icon">
+            <use xlink:href="./images/spriteopt.svg#icon-phone-black">
+            </use>
+        </svg>
+    </div>
+        <div class="form-field">
+        <label for="mail" class="form-label">Почта</label>
+        <input type="text" id="mail"  name="user-email" class="form-input">
+        <svg class="input-icon">
+            <use xlink:href="./images/spriteopt.svg#icon-email-black">
+            </use>
+        </svg>
+        </div>
+        <div class="form-field">
+            <label for="comments" class="form-label">Комментарии</label>
+        <textarea  class="form-input" id="comments" name="user-comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
+    </div>
+    </div>
+    <div class="check-contract-terms">
+    <label class="check">
+<input type="checkbox" class="check-input" name="user-agreement" required checked>
+<svg class="check-icon">
+    <use xlink:href="./images/spriteopt.svg#icon-icon-check">
+    </use>
+</svg>
+<p class="contract-terms">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </p>
+    </label>
+    </div>
+    
+
+    
+    <button type="submit" class="subscribe-btn send"> Отправить</button>
+</form>
+
      </div>
 
  </div>
